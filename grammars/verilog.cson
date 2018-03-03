@@ -1,7 +1,5 @@
 'fileTypes': [
-  'v'
   'sv'
-  'vh'
   'svh'
 ]
 'name': 'SystemVerilog'
