@@ -1,4 +1,4 @@
-# SystemVerilog language support in Atom
+# [SystemVerilog language support in Atom](https://atom.io/packages/language-systemverilog)
 
 Adds syntax highlighting and snippets to SystemVerilog files in Atom.
 
