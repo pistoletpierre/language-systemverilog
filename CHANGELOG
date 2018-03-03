@@ -1,2 +1,8 @@
+v 0.2.0
+  - Added Sublime's SystemVerilog grammar converted by jfrogget (https://github.com/Razer6/language-verilog/pull/13)
+  - Re-added .v and .vh extensions
+  - Added some of sabertazimi's snippets (https://github.com/Razer6/language-verilog/pull/20 - only the ones that weren't already accounted for by jfrogget's pull request)
+  - I think jfrogget's pull request changes take care of https://github.com/Razer6/language-verilog/pull/24 as well
+
 v 0.1.0
   - Initial clone from language-verilog repository (v 0.5.0)

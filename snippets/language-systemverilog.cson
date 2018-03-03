@@ -72,6 +72,20 @@
 
 
 #B
+  'begin end':
+    'prefix': 'beg'
+    'body': """
+      begin
+        $0
+      end
+    """
+
+  'bit_range':
+    'prefix': 'bit_range'
+    'body': """
+      bit [${1:left_range}:${2:right_range}] ${3:name};
+      $0
+    """
 
 #C
   'case':
@@ -82,14 +96,48 @@
       \tdefault: ;
       endcase
     """
+  'Comment Box':
+    prefix: 'comment'
+    body: '''
+      //------------------------------------------------------------------------------
+      //  ${0}
+      //------------------------------------------------------------------------------
+    '''
 
 #D
 
 #E
 
 #F
+  "For Loop":
+    'prefix': "for"
+    'body': '''
+      for (int ${2:i} = 0; $2 < ${1:count}; ${3:$2++}) begin
+      	$0
+      end
+    '''
+
+  'for-generate':
+    'prefix': 'forg'
+    'body': """
+      generate
+      \tgenvar ${1:i};
+      \tfor ($1 = 0; $1 < ${2:n}; $1 = $1 + 1)
+      \tbegin:${3:identifier}
+      \t\t$0
+      \tend
+      endgenerate
+    """
 
 #G
+  'generate':
+    'prefix': 'generate'
+    'body': """
+      generate
+      \tgenvar i;
+      \t$0
+      endgenerate
+    """
 
 #H
 
@@ -155,6 +203,20 @@
       \t$0
       'endif
     """
+  "'ifndef … 'define … 'endif":
+    'prefix': "'ifndef"
+    'body': '''
+      'ifndef ${1/([A-Za-z0-9_]+).*/$1/}
+      #define ${1:SYMBOL} ${2:value}
+      #endif
+    '''
+  'Interface':
+    'prefix': "interface"
+    'body': '''
+      interface $1 ();
+
+      endinterface
+    '''
 
 
 #J
@@ -200,6 +262,13 @@
       parameter ${1:parameter_type} ${2:parameter_name} = ${3:parameter_value},
       $0
     """
+  'package':
+    'prefix': "package"
+    'body': '''
+      package $1;
+
+      endpackage
+    '''
 
 #Q
 
@@ -227,6 +296,13 @@
       'timescale ${1:time} / ${2:time}
       $0
     """
+  "Task SystemVerilog":
+    'prefix': "task"
+    'body': '''
+      task ${0}();
+
+      endtask : ${0}
+    '''
 
 #U
 
