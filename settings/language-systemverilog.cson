@@ -1,4 +1,4 @@
-'.source.verilog':
+'.source.systemverilog':
   'editor':
     'foldEndPattern': '\\s*(end(case|module)?|`endif)\\b'
     'commentStart': '// '
