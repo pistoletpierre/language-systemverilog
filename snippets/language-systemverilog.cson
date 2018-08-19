@@ -66,17 +66,17 @@
   'assign multi':
     'prefix': 'assign_m'
     'body': """
-      assign ${1:destination} = (${2:question}) ? ${3:true_source} : ${4:else_source}
+      assign ${1:destination} = (${2:question}) ? ${3:true_source} : ${4:else_source};
       $0
     """
 
 
 #B
   'begin end':
-    'prefix': 'beg'
+    'prefix': 'begin'
     'body': """
       begin
-        $0
+      \t$0
       end
     """
 
