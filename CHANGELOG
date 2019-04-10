@@ -1,3 +1,6 @@
+v 0.10.0
+  - Resolved KoenGoe's issue: "decreaseIndentPattern does not use \b before end-like keywords" https://github.com/pistoletpierre/language-systemverilog/issues/2
+
 v 0.9.0
   - Messed up the update process previously and got the wrong version number in the changelog as a result. This should restore it.
 
