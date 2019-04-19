@@ -1,5 +1,8 @@
+v 0.11.1
+  - Fixed the v 0.11.0 line in the changelog
+
 v 0.11.0
-  - Resolved Tharaqon's issue: "decreaseIndentPattern does not use \b before end-like keywords" https://github.com/pistoletpierre/language-systemverilog/issues/3
+  - Resolved Tharaqon's issue: "Syntax Highlighting bug related to typedef of multidimensional arrays" https://github.com/pistoletpierre/language-systemverilog/issues/3
 
 v 0.10.0
   - Resolved KoenGoe's issue: "decreaseIndentPattern does not use \b before end-like keywords" https://github.com/pistoletpierre/language-systemverilog/issues/2
