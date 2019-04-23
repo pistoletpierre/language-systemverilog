@@ -1,3 +1,6 @@
+v 0.12.2
+  - Hopefully fully resolved Tharaqon's issue (see v 0.11.0): "Syntax Highlighting bug related to typedef of multidimensional arrays" https://github.com/pistoletpierre/language-systemverilog/issues/3
+
 v 0.12.1
   - Fixed changelog again (published a "minor" rather than a "patch", bumping it up to 0.12.0 rather than the intended 0.11.1)
 
