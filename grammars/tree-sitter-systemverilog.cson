@@ -37,6 +37,16 @@ folds: [
     end: {index: -1}
   }
   {
+    type: ['class_constructor_declaration']
+    start: {index: 4}
+    end: {index: -1}
+  }
+  {
+    type: ['class_declaration']
+    start: {index: 2}
+    end: {index: -1}
+  }
+  {
     type: ['list_of_parameter_assignments']
     start: {index: 1}
     end: {index: -1}
@@ -84,44 +94,93 @@ scopes:
   macro_text: 'string'
   time_literal: 'string'
 
-  'translation_unit': 'source.systemverilog'
-  'comment': 'comment.block'
+  translation_unit: 'source.systemverilog'
+  comment: 'comment.block'
+  attribute_instance: 'comment.block'
 
-  'module_keyword': 'storage.type.module.systemverilog'
+
+  module_keyword: 'storage.type.module.systemverilog'
   '"endmodule"': 'storage.type.module.systemverilog'
+  '"function"': 'storage.type.module.systemverilog'
+  '"endfunction"': 'storage.type.module.systemverilog'
+  '"task"': 'storage.type.module.systemverilog'
+  '"endtask"': 'storage.type.module.systemverilog'
+  '"class"': 'storage.type.module.systemverilog'
+  '"endclass"': 'storage.type.module.systemverilog'
+  '"package"': 'storage.type.module.systemverilog'
+  '"endpackage"': 'storage.type.module.systemverilog'
 
   '"virtual"': 'storage.modifier'
   '"protected"': 'storage.modifier'
+  '"pure"': 'storage.modifier'
+  '"const"': 'storage.modifier'
+  '"local"': 'storage.modifier'
+  '"static"': 'storage.modifier'
+  '"automatic"': 'storage.modifier'
+  '"protected"': 'storage.modifier'
+  '"rand"': 'storage.modifier'
+  '"randc"': 'storage.modifier'
+  '"priority"': 'storage.modifier'
+  '"unique"': 'storage.modifier'
+  '"unique0"': 'storage.modifier'
+  '"interface"': 'storage.modifier'
 
   name_of_instance: 'entity.name.type'
 
   "'assert'": 'keyword.control'
   "'assume'": 'keyword.control'
+  "'disable'": 'keyword.control'
+
   "'cover'": 'keyword.control'
   "'expect'": 'keyword.control'
   "'property'": 'keyword.control'
   # always_keyword: 'keyword.control'
+
   '"always"': 'keyword.control'
+  '"always_comb"': 'keyword.control'
+  '"always_ff"': 'keyword.control'
+  '"always_latch"': 'keyword.control'
+
+  '"initial"': 'keyword.control'
+  '"final"': 'keyword.control'
   '"assign"': 'keyword.control'
+  '"new"': 'keyword.control'
+
   '"begin"': 'keyword.control'
   '"end"': 'keyword.control'
-  '"for"': 'keyword.control'
-  '"if"': 'keyword.control'
-  '"else"': 'keyword.control'
   '"import"': 'keyword.control'
-  '"function"': 'keyword.control'
-  '"endfunction"': 'keyword.control'
-  '"task"': 'keyword.control'
-  '"endtask"': 'keyword.control'
-  '"class"': 'keyword.control'
-  '"endclass"': 'keyword.control'
+
   '"typedef"': 'keyword.control'
-  '"return"': 'keyword.control'
   '"extends"': 'keyword.control'
-  '"void"': 'keyword.control'
   '"forever"': 'keyword.control'
   '"generate"': 'keyword.control'
   '"endgenerate"': 'keyword.control'
+  '"tagged"': 'keyword.control'
+  '"matches"': 'keyword.control'
+  '"struct"': 'keyword.control'
+
+  '"default"': 'keyword.control'
+
+  '"for"': 'keyword.control'
+  '"if"': 'keyword.control'
+  '"else"': 'keyword.control'
+  '"return"': 'keyword.control'
+  '"break"': 'keyword.control'
+  '"continue"': 'keyword.control'
+  '"repeat"': 'keyword.control'
+  '"foreach"': 'keyword.control'
+  '"while"': 'keyword.control'
+  '"do"': 'keyword.control'
+
+  '"fork"': 'keyword.control'
+  '"join"': 'keyword.control'
+  '"join_any"': 'keyword.control'
+  '"join_none"': 'keyword.control'
+  '"wait"': 'keyword.control'
+  '"wait_order"': 'keyword.control'
+
+  '"inside"': 'keyword.control'
+
   case_keyword: 'keyword.control'
   '"endcase"': 'keyword.control'
 
@@ -143,6 +202,8 @@ scopes:
   non_integer_type: 'support.storage.type'
   '"genvar"': 'support.storage.type'
   variable_port_type: 'support.storage.type'
+  '"void"': 'support.storage.type'
+
   hierarchical_identifier: 'keyword'
 
   '"parameter"': 'keyword.other.systemverilog'
@@ -212,3 +273,9 @@ scopes:
   '"<<<"': 'keyword'
   '"->"': 'keyword'
   '"<->"': 'keyword'
+
+  '"+:"': 'keyword'
+  '"-:"': 'keyword'
+
+  '"++"': 'keyword.opeartor'
+  '"--"': 'keyword.opeartor'
