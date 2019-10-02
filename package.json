@@ -20,6 +20,6 @@
     "node": "*"
   },
   "dependencies": {
-    "tree-sitter-verilog": "^0.18.0"
+    "tree-sitter-verilog": "^0.18.1"
   }
 }
