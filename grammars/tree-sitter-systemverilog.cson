@@ -85,6 +85,7 @@ scopes:
   zero_directive: 'keyword.control.directive'
   timescale_compiler_directive: 'keyword.control.directive'
   default_nettype_compiler_directive: 'keyword.control.directive'
+  unconnected_drive: 'keyword.control.directive'
   line_compiler_directive: 'keyword.control.directive'
 
   text_macro_identifier: 'entity.name.type'
@@ -101,14 +102,36 @@ scopes:
 
   module_keyword: 'storage.type.module.systemverilog'
   '"endmodule"': 'storage.type.module.systemverilog'
+
   '"function"': 'storage.type.module.systemverilog'
   '"endfunction"': 'storage.type.module.systemverilog'
+
   '"task"': 'storage.type.module.systemverilog'
   '"endtask"': 'storage.type.module.systemverilog'
+
   '"class"': 'storage.type.module.systemverilog'
   '"endclass"': 'storage.type.module.systemverilog'
+
   '"package"': 'storage.type.module.systemverilog'
   '"endpackage"': 'storage.type.module.systemverilog'
+
+  '"interface"': 'storage.type.module.systemverilog'
+  '"endinterface"': 'storage.type.module.systemverilog'
+
+  '"specify"': 'storage.type.module.systemverilog'
+  '"endspecify"': 'storage.type.module.systemverilog'
+
+  '"property"': 'storage.type.module.systemverilog'
+  '"endproperty"': 'storage.type.module.systemverilog'
+
+  '"checker"': 'storage.type.module.systemverilog'
+  '"endchecker"': 'storage.type.module.systemverilog'
+
+  '"covergroup"': 'storage.type.module.systemverilog'
+  '"endgroup"': 'storage.type.module.systemverilog'
+
+  '"constraint"': 'storage.type.module.systemverilog'
+
 
   '"virtual"': 'storage.modifier'
   '"protected"': 'storage.modifier'
@@ -123,7 +146,6 @@ scopes:
   '"priority"': 'storage.modifier'
   '"unique"': 'storage.modifier'
   '"unique0"': 'storage.modifier'
-  '"interface"': 'storage.modifier'
 
   name_of_instance: 'entity.name.type'
 
@@ -133,7 +155,6 @@ scopes:
 
   "'cover'": 'keyword.control'
   "'expect'": 'keyword.control'
-  "'property'": 'keyword.control'
   # always_keyword: 'keyword.control'
 
   '"always"': 'keyword.control'
@@ -178,6 +199,7 @@ scopes:
   '"join_none"': 'keyword.control'
   '"wait"': 'keyword.control'
   '"wait_order"': 'keyword.control'
+  '"nettype"': 'keyword.control'
 
   '"inside"': 'keyword.control'
 
@@ -209,6 +231,7 @@ scopes:
   '"parameter"': 'keyword.other.systemverilog'
   '"localparam"': 'keyword.other.systemverilog'
   '"defparam"': 'keyword.other.systemverilog'
+  '"specparam"': 'keyword.other.systemverilog'
 
   # number: 'number'
   # constant_expression: 'constant'
