@@ -75,9 +75,6 @@ comments:
 
 scopes:
 
-  ERROR: 'invalid.illegal.underline'
-  MISSING: 'invalid.deprecated'
-
   include_compiler_directive: 'keyword.control.directive'
   text_macro_definition: 'keyword.control.directive'
   text_macro_usage: 'keyword.control.directive'
