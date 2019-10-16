@@ -75,15 +75,16 @@ comments:
 
 scopes:
 
-  include_compiler_directive: 'keyword.control.directive'
-  text_macro_definition: 'keyword.control.directive'
-  text_macro_usage: 'keyword.control.directive'
-  id_directive: 'keyword.control.directive'
-  zero_directive: 'keyword.control.directive'
-  timescale_compiler_directive: 'keyword.control.directive'
-  default_nettype_compiler_directive: 'keyword.control.directive'
-  unconnected_drive: 'keyword.control.directive'
-  line_compiler_directive: 'keyword.control.directive'
+  include_compiler_directive: 'entity.name.type'
+  text_macro_definition: 'entity.name.type'
+  text_macro_usage: 'entity.name.type'
+  id_directive: 'entity.name.type'
+  zero_directive: 'entity.name.type'
+  timescale_compiler_directive: 'entity.name.type'
+  default_nettype_compiler_directive: 'entity.name.type'
+  unconnected_drive: 'entity.name.type'
+  line_compiler_directive: 'entity.name.type'
+  begin_keywords: 'entity.name.type'
 
   text_macro_identifier: 'entity.name.type'
 
@@ -91,6 +92,7 @@ scopes:
   include_compiler_directive_standard: 'string'
   macro_text: 'string'
   time_literal: 'string'
+  double_quoted_string: 'string'
 
   translation_unit: 'source.systemverilog'
   comment: 'comment.block'
@@ -127,6 +129,15 @@ scopes:
   '"covergroup"': 'storage.type.module.systemverilog'
   '"endgroup"': 'storage.type.module.systemverilog'
 
+  '"clocking"': 'storage.type.module.systemverilog'
+  '"endclocking"': 'storage.type.module.systemverilog'
+
+  '"program"': 'storage.type.module.systemverilog'
+  '"endprogram"': 'storage.type.module.systemverilog'
+
+  '"sequence"': 'storage.type.module.systemverilog'
+  '"endsequence"': 'storage.type.module.systemverilog'
+
   '"constraint"': 'storage.type.module.systemverilog'
 
 
@@ -135,6 +146,7 @@ scopes:
   '"pure"': 'storage.modifier'
   '"const"': 'storage.modifier'
   '"local"': 'storage.modifier'
+  '"global"': 'storage.modifier'
   '"static"': 'storage.modifier'
   '"automatic"': 'storage.modifier'
   '"protected"': 'storage.modifier'
