@@ -2,6 +2,11 @@
   "name": "language-systemverilog",
   "version": "0.12.2",
   "description": "SystemVerilog language support in Atom",
+  "main": "lib/main",
+  "keywords": [
+    "tree-sitter",
+    "systemverilog"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/pistoletpierre/language-systemverilog"
@@ -11,7 +16,10 @@
   },
   "license": "MIT",
   "engines": {
-    "atom": ">0.50.0"
+    "atom": "*",
+    "node": "*"
   },
-  "dependencies": {}
+  "dependencies": {
+    "tree-sitter-verilog": "^0.18.3"
+  }
 }
