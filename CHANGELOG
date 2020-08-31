@@ -1,3 +1,6 @@
+v 1.0.0
+  - Now uses tree-sitter rather than regex matching (thanks drom!)
+
 v 0.12.2
   - Hopefully fully resolved Tharaqon's issue (see v 0.11.0): "Syntax Highlighting bug related to typedef of multidimensional arrays" https://github.com/pistoletpierre/language-systemverilog/issues/3
 
