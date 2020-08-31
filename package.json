@@ -1,6 +1,6 @@
 {
   "name": "language-systemverilog",
-  "version": "0.12.2",
+  "version": "1.0.0",
   "description": "SystemVerilog language support in Atom",
   "main": "lib/main",
   "keywords": [
