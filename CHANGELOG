@@ -1,3 +1,6 @@
+v 0.12.3
+  - Resolved JohanMes's issue, hopefully not introducing one or more new ones: "Comment detection breaks inside module instantation without parameter list" https://github.com/pistoletpierre/language-systemverilog/issues/9
+
 v 0.12.2
   - Hopefully fully resolved Tharaqon's issue (see v 0.11.0): "Syntax Highlighting bug related to typedef of multidimensional arrays" https://github.com/pistoletpierre/language-systemverilog/issues/3
 

@@ -432,7 +432,7 @@ patterns: [
     name: "storage.type.rand.systemverilog"
   }
   {
-    begin: "^(\\s*(bind)\\s+([a-zA-Z_][\\w\\.]*))?\\s*([a-zA-Z_][a-zA-Z0-9_]*)\\s*(?=#[^#])"
+    begin: "^(\\s*(bind)\\s+([a-zA-Z_][\\w\\.]*))?\\s*([a-zA-Z_][a-zA-Z0-9_]*)\\s*" #(?=#[^#])"
     beginCaptures:
       "2":
         name: "keyword.control.systemverilog"
