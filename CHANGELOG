@@ -1,4 +1,4 @@
-v 0.12.3
+v 0.12.4
   - Resolved JohanMes's issue, hopefully not introducing one or more new ones: "Comment detection breaks inside module instantation without parameter list" https://github.com/pistoletpierre/language-systemverilog/issues/9
 
 v 0.12.2
